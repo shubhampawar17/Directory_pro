@@ -1,0 +1,595 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Open Sans', sans-serif;
+}
+
+
+nav{
+     background-color: rgb(244, 239, 239);
+     height: 90px;
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+}
+
+nav > h1{
+     color: #000;
+     font-size: 30px;
+     font-weight: 900;
+     padding-top: 30px;
+     margin-left:15px;
+     display: inline-block;
+     font-family: 'Asap', sans-serif;   
+     vertical-align:middle;
+}
+
+h1 > span{
+     vertical-align: top;
+     font-family: 'Asap', sans-serif;
+     display: inline-block;
+     margin-top: 5px;
+     font-size: 12px;
+     font-weight: bold;
+     padding: 4px;
+     color: #fff;
+     border-radius: 1px;
+     background: #5cb85c;
+}
+
+nav .menus{
+     float: right;
+     margin-left: 170px;
+}
+nav .menus > li{
+     display: inline-block;
+     line-height: 90px;
+}
+nav .menus > li > a{
+     color: black;
+     font-size: 15px;
+     padding: 7px 10px;
+     text-decoration: none;
+}
+.active{
+     font-weight: 1000;
+}
+
+.active::after{
+     content: "";
+     width: 70px;
+     height: 5px;
+     position: absolute;
+     top: 85px;
+     left: 345px;
+     background-color: #5cb85c;
+}
+
+.nav-btns{
+     padding: 7px;
+     border: 1px solid rgb(150, 150, 150);
+     border-radius: 2px;
+}
+
+.close-btns{
+     float: right;
+     margin-left: 30px;
+}
+
+.close-btns > li{
+     display: inline-block;
+     line-height: 90px;
+}
+.close-btns > li > a{
+     color: rgb(134, 134, 134);
+}
+.add33{
+     margin-right: 15px;
+     display: flex;
+     justify-content: center;
+     height: 30px;
+     line-height: 15px;
+}
+.add33 > a{
+     border: 1px solid rgb(150, 150, 150);
+     border-radius: 2px;
+     padding: 5px;
+     text-decoration: none;
+}
+.num{
+     color: rgb(134, 134, 134);
+}
+.coloured{
+     color: #fff;
+     background-color: #5cb85c;
+
+}
+
+.main{
+     background: url("imgs/timesquare.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.main > .Container > h1{
+     margin-top: 80px;
+     text-align: center;
+     font-size: 45px;
+     color: #fff;
+}
+.main .Container {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.searchbox > .searcharea{
+     background-color:#fff;
+     padding-right: 5px;
+     height: 55px;
+     display: inline-block;
+     border-radius: 4px;
+}
+
+.searchbox > .searcharea > input{
+     width: 500px;
+     border:none;
+     font-size: 18px;
+     outline: none;
+}
+.searchbox > .searcharea > .fa-magnifying-glass{
+     align-self: center;
+     padding: 0 20px;
+     line-height: 55px;
+     color: black;
+}
+.searchbox > #searchbtn{
+     display: inline-block;
+     background-color: rgb(76, 76, 218);
+     margin-left: 20px;
+     width: 200px;
+     height: 55px;
+     padding: 10px 0px;
+     border-radius: 4px;
+     border: none;
+     outline:none;
+     color:  #fff;
+     cursor: pointer;
+}
+
+.abc{
+     width: 100%;
+     align-self: center;
+     justify-content: center;
+     text-align: center;
+     color: white;
+}
+
+.icons{
+     display: flex;
+     justify-items: center;
+     width: 300px;
+
+}
+.fa-location-dot,.fa-folder,.fa-crosshairs{
+     margin-top: 30px;
+     width: 50px;
+     height: 50px;
+     text-align: center;
+     line-height: 50px;
+     color: white;
+     background-color: rgb(76, 76, 218);
+     font-size: 22px;
+     border:1px solid black;
+}
+
+.fa-folder{
+     margin-left: 60px;
+}
+
+
+.slides{
+     background-color: rgb(244, 239, 239);
+     height: 250px;
+     padding-top: 50px;
+     position: relative;
+     display: flex;
+     justify-content: space-around;
+}
+
+.left-arrow,.right-arrow{
+     bottom:90px;
+     left: 10px;
+     font-size: 50px;
+     margin-top: 40px;
+     color: rgb(76, 76, 218);
+     opacity: .3;
+}
+.right-arrow{
+     right: 10px;
+}
+.slides > .varieties{
+     display: flex;
+     grid-template-columns: repeat(6,1fr);
+     justify-items: center;
+     grid-column-gap: 20px;
+}
+
+.slides > .varieties > *{
+     background-color: rgb(255, 255, 255);
+     width: 150px;
+     height: 150px;
+     border-radius: 5px;
+}
+
+.ico{
+     font-size: 35px;
+     color: rgb(76, 76, 218);
+     margin-top: 40px;
+     text-align: center;
+     width: 100%;
+}
+.slide-text{
+     color: rgb(76, 76, 218);
+     text-align: center;
+     margin-top: 20px;
+}
+
+
+
+.feature-header > span{
+     color: rgb(76, 76, 218);
+}
+.feature-header{
+     text-align: center;
+     font-size: 28px;
+     font-weight: bold;
+     margin-top: 30px;
+     font-family: 'Asap', sans-serif;
+}
+
+.places{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     justify-items: center;
+}
+
+.hamburger, .shoes, .cycling, .travel{
+     border-radius: 8px;
+     box-shadow: 0px 7px 40px -30px  #000;
+     margin: 60px 0 ;
+}
+.hamburger > .ftr-burger-img-section,
+.shoes > .ftr-shoes-img-section,
+.cycling > .ftr-cycle-img-section,
+.travel > .ftr-travel-img-section{
+     background-image: url("imgs/feature_hamburger.jpg");
+     background-color: #5cb85c;
+     width: 250px;
+     height: 150px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+}
+
+.hamburger > .ftr-burger-img-section > .fa-bookmark,
+.shoes > .ftr-shoes-img-section > .fa-bookmark,
+.cycling > .ftr-cycle-img-section > .fa-bookmark,
+.travel > .ftr-travel-img-section > .fa-bookmark{
+     background-color:#5cb85c;
+     padding: 7px;
+     margin: 5px 5px 0;
+     color: #fff;
+     font-size: 13px;
+     border-radius: 3px;
+}
+
+.ftr-burger-details, .ftr-shoes-details,
+.ftr-cycle-details, .ftr-travel-details{
+     text-align: center;
+     padding: 0 5px;
+}
+.ftr-burger-name, .ftr-shoes-name,
+.ftr-cycle-name, .ftr-travel-name{
+     font-weight: 900;
+     margin: 10px 0;
+}
+.burger-specs, .shoes-specs,
+.cycle-specs, .travel-specs{
+     margin-bottom: 10px;
+     font-size: 14px;
+     color: rgb(175, 175, 175);
+}
+.burger-keys, .shoes-keys,
+.cycle-keys, .travel-keys{
+     color: #5cb85c;
+     background-color: #daf5da;
+     margin-right: 5px;
+     font-size: 12px;
+}
+.key-one, .key-two{
+     border-radius: 3px;
+     padding:3px;
+}
+
+.ftr-burger-details > .star,
+.ftr-shoes-details > .star,
+.ftr-cycle-details > .star,
+.ftr-travel-details > .star{
+     margin: 10px 0;
+}
+
+.shoes > .ftr-shoes-img-section{
+     background-image: url("imgs/fashionshoes.jpg");
+}
+.cycling > .ftr-cycle-img-section{
+     background-image: url("imgs/mountaincycling.jpg");
+}
+.travel > .ftr-travel-img-section{
+     background-image: url("imgs/outdoortravel.jpg");
+}
+
+
+.nav-head{
+     display: flex;
+     justify-content: space-between;
+}
+.btn{
+     width: 30px;
+     height: 30px;
+     color: #fff;
+     background-color: rgb(76, 76, 218);
+     outline: none;
+     border: 1px solid #000;
+}
+.left-right{
+     display: flex;
+}
+
+.navigation > .nav-head > h4{
+     margin-left: 15px;
+}
+.btn-right{
+     margin-right: 30px ;
+}
+
+.states{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     justify-items: center;
+     grid-column-gap: 20px ;
+}
+.states > .state{
+     width: 350px;
+     height: 350px;
+     border-radius: 4px;
+     background-size: cover;
+     margin: 70px 0;
+}
+.states > .state > h2{
+     margin-top: 230px;
+}
+.states > .Connecticut{
+     background-image: url("imgs/connecticut.jpg");
+}
+.states > .newjersey{
+     background-image: url("imgs/newjersey.jpg");
+}
+.states > .newyork{
+     background-image: url("imgs/newyork.jpg");
+}
+
+.state > *{
+     color: #fff;
+     padding: 10px;     
+     margin: 0 auto;
+     padding-left: 0;
+}
+.state > p{
+     width: 90%;
+     font-size: 14px;
+}
+.state > h2{
+     padding-left: 15px;
+}
+
+
+
+.map-container{
+     height: 310px;
+     background-color: #123;
+     background-image: url("imgs/world-map.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.reg-container{
+     background-color: rgb(76, 76, 218);
+     height: 100%;
+     opacity: .9;
+}
+
+.reg-heading{
+     text-align: center;
+     color: #fff;
+     padding-top: 60px ;
+     padding-bottom: 30px ;
+     font-size: 30px;
+     font-family: 'Asap', sans-serif;
+     font-weight: bold;
+}
+.reg-container > p{
+     text-align: center;
+     width: 80%;
+     margin: 0 auto;
+     color: rgb(218, 218, 218);
+}
+.reg-container > #reg-btn{
+     display: block;
+     width: 200px;
+     padding: 10px;
+     margin: 0 auto;
+     margin-top: 20px ;
+     color: rgb(76, 76, 218);
+     font-weight: bold;
+}
+
+
+
+.inshorts{
+     background-color: rgb(2, 15, 35);
+     display: grid;
+     grid-template-columns:40% 30% 30%;
+     justify-items:flex-start;
+     padding: 35px 15px; 
+     padding-top: 50px;
+}
+.first{
+     width: 450px;
+}
+
+
+.footer-section > h1{
+     color: #fff;
+     margin-bottom: 20px;
+     display: inline-block;
+     font-family: 'Asap', sans-serif;
+}
+
+.footer-section > h5{
+     color: #fff;
+     text-align: left;
+     margin-bottom: 25px;
+     font-family: 'Open Sans', sans-serif;
+
+}
+.footer-section > p{
+     color:rgb(203, 203, 203);
+     padding-right: 10px;
+     font-size: 14px;
+}
+
+.footer-section > span{
+     vertical-align: top;
+     font-family: 'Asap', sans-serif;
+     display: inline-block;
+     font-size: 12px;
+     font-weight: bold;
+     padding: 2px;
+     color: #fff;
+     border-radius: 1px;
+     background: #5cb85c;
+     margin-top: 10px;
+}
+
+.burger-pic-names-star{
+     display: grid;
+     grid-template-columns: 20% 80%;
+}
+.footer-section > .burger-pic-names-star > .burgerpic > img{
+     width: 45px;
+     height: 40px;
+     border-radius: 2px;
+}
+.burgerpic{
+     width: min-content;
+}
+
+.bg-img{
+     background-image: url("imgs/hamburger.jpg");
+     width: 45px;
+     height: 40px;
+     border-radius: 2px;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.bg-img > .fa-bookmark{
+     background-color: #5cb85c;
+     border-radius: 3px;
+     padding: 5px;
+     color: #fff;
+     font-size: 9px;
+     margin: 3px 3px 0px;
+}
+.burger-name-star > .burgername{
+     color: #5cb85c;
+     font-weight: bold;
+     margin-bottom: 8px;
+}
+.fa-star{
+     color: rgb(230, 209, 56);
+     font-size: 12px;
+}
+.fa-star-half-stroke{
+     color: rgb(230, 209, 56);
+     font-size: 12px;
+}
+.empty-star{
+     color: rgb(213, 214, 180);
+
+}
+.burger-detail{
+     margin-top:10px ;
+     color:rgb(203, 203, 203);
+     width: 80%;
+     font-size: 14px;
+}
+#footer-contact-btn{
+     background-color: #5cb85c;
+     padding: 5px;
+     margin-top: 10px;
+     color: #fff;
+     border-radius: 4px;
+}
+.third > p{
+     font-size: 16px;
+     
+}
+
+.cp-socialmedialink{
+     background-color: rgb(29, 38, 53);
+     height: 50px;
+     position: relative;
+}
+.copyrightmessage{
+     color:#fff;
+     font-size: 12px;
+     position:absolute; 
+     bottom:2px;
+     left: 15px;
+     vertical-align: bottom;
+}
+.cp-socialmedialink > .copyrightmessage > span{
+     color: gray;
+}
+
+.cp-socialmedialink .footer-nav > a,
+.cp-socialmedialink .footer-nav > i{
+     margin: 25px 20px 0px;
+     float: right;
+}
+.cp-socialmedialink .footer-nav a{
+     color:#fff;
+     text-decoration: none;
+     font-size: 14px;margin-right: 30px;
+}
+.cp-socialmedialink .footer-nav > i{
+     background-color: #234;
+     text-align: center;
+     width: 30px;
+     padding-top: 7px;
+     margin-top: 14px;
+     background-color: #fff;
+     border-radius: 50%;
+     margin-left: 0;
+     height: 30px;
+}
+
+.footer-nav > .fa-regular,
+.footer-nav > .fa-brands{
+     color: #234;
+}
